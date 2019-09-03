@@ -1,6 +1,7 @@
 body {
 	font: 12px "Candara", "Calibri", Arial;
-	background: #fff url(../imagens/fundo.jpg);
+	background: grey url(../imagens/background.png);
+	background-size: 100%;
 
 }
 
@@ -102,6 +103,16 @@ ul {
 	font-size: 1.2em;
 }
 
+.blocoSlider1 {
+	margin: -10px -10px 150px -10px;
+	font-size: 1.2em;
+}
+
+.blocoSlider2 {
+	margin: -10px -10px 280px -10px;
+	font-size: 1.2em;
+}
+
 .tp {
 	margin-left: 10px;
 	opacity: 0.4;
@@ -115,7 +126,13 @@ ul {
   	transform: scale(1.3);
 }
 
-/* Extra large devices (large desktops, 1200px and up)*/
+.titProj {
+	font-size: 25px;
+	color: #000;
+	font-weight: bolder;
+	margin-left: 26%;
+}
+
 @media (min-width: 992px) {
 	
 	h1 {
@@ -162,4 +179,73 @@ ul {
 	padding: 18px;
 	}
 
+}
+
+.slider {
+	display: block;
+	height: 293px;
+	width: 600px;
+	margin: auto;
+	margin-top: 20px;
+	position: relative;
+}
+
+.slider li {
+	list-style: none;
+	position: absolute;
+}
+
+.slider img {
+	margin: auto;
+	height: 100%;
+	width: 100%;
+	vertical-align: top;
+	border: 2px solid #000;
+}
+
+.slider input {
+	display: none;
+	margin-left: auto;
+}
+
+.slider label {
+	border-radius: 15px;
+	margin-left: 42%;
+	background-color: #000;
+	bottom: 10px;
+	cursor: pointer;
+	display: block;
+	height: 20px;
+	position: absolute;
+	width: 20px;
+	z-index: 10;
+}
+
+.blocoSlider2 label {
+	background-color: #FFF;
+	opacity: 0.9;
+	border: 3px solid #000;
+}
+
+.slider li:nth-child(1) label {
+	left: 10px;
+}
+
+.slider li:nth-child(2) label {
+	left: 40px;
+}
+
+.slider li:nth-child(3) label {
+	left: 70px;
+}
+
+.slider img {
+	opacity: 0;
+	visibility: hidden;
+}
+
+.slider li input:checked ~ img {
+	opacity: 1;
+	visibility: visible;
+	z-index: 10;
 }
