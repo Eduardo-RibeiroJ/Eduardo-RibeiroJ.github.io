@@ -36,6 +36,14 @@ ul {
 	text-align: center;
 }
 
+.imgPrj {
+	margin: auto;
+	height: 50%;
+	width: 50%;
+	vertical-align: top;
+	border: 2px solid #000;
+}
+
 #container {
 	padding: 10px;
 	background: white;
