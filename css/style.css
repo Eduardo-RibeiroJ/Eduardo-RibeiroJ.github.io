@@ -32,6 +32,9 @@ section .container {
 	background-color: #fafafa;
 }
 
+.card-title {
+	text-align: left;
+}
 .card-subtitle {
 	font-size: 0.8em;
 }
@@ -79,6 +82,7 @@ footer .row {
 }
 
 footer .row .display-4 {
+	margin-top: 5%;
 	padding: 5%;
 	text-align: center;
 	font-size: 1em;
@@ -190,6 +194,7 @@ footer .row .display-4 {
 	}
 
 	footer .row .display-4 {
+		margin-top: 0;
 		padding: 5%;
 		text-align: center;
 		font-size: 1.6em;
